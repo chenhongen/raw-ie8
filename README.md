@@ -12,3 +12,11 @@ npm install es3ify-loader --save-dev 未起作用~~
 2. default引起的“缺少标识符”问题
 export default xx 使用 export {xx} 替代；
 import xx from 'path' 使用 const {xx} = require('path') 替代；
+
+
+
+Velocity: IE8 and below require jQuery to be loaded before Velocity. 
+引入jq
+
+
+import导入antd插件

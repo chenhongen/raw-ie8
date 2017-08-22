@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 module.exports = {
   entry: './entry.js',
   output: {
@@ -12,6 +14,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: ['babel-loader'],
+      },
+      {
+         test: /\.css$/,
+         loader: 'style-loader!css-loader'
       }
     ],
 	// rules: [{
@@ -21,4 +27,5 @@ module.exports = {
   //     }
   //   ]
   }
+  
 };
