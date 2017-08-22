@@ -4,7 +4,7 @@
 # 扩展过程
 1. react-router
 npm install react-router@1.0.3 --save
-（若提示确实history依赖：npm install history@1.17.0，笔者使用cnpm安装，可能因此导致的漏包。）
+（若提示确实history依赖：npm install history@1.17.0）
 
 1.1 ~~es3ify-loader
 npm install es3ify-loader --save-dev 未起作用~~
