@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+var es3ifyPlugin = require('es3ify-webpack-plugin');
 
 module.exports = {
   entry: './entry.js',
@@ -21,11 +22,13 @@ module.exports = {
       }
     ],
 	// rules: [{
-  //       test: /.js$/,
+  //       test: /\.js$/,
   //       enforce: 'post', // post-loader处理
   //       loader: 'es3ify-loader'
   //     }
   //   ]
-  }
-  
+  },
+  plugins: [
+  new es3ifyPlugin()
+]
 };
