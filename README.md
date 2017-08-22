@@ -1,6 +1,6 @@
 # 简介
 RAW=react+antd+webpack
-本仓库为兼容ie8版本，基于[react-ie8]。(https://github.com/xcatliu/react-ie8/tree/master/examples/hello-world)
+本仓库为兼容ie8版本，基于[react-ie8。](https://github.com/xcatliu/react-ie8/tree/master/examples/hello-world)
 
 # 扩展过程
 1. react-router
