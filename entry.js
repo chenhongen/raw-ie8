@@ -19,7 +19,11 @@ require('console-polyfill');
 const React = require('react');
 const ReactDOM = require('react-dom');
 
+//import Home from './component/module';
+const {Home} = require('./component/module');
+
+
 ReactDOM.render(
-  <h1>Hello World</h1>,
+  <Home/>,
   document.getElementById('app')
 );
