@@ -81,6 +81,53 @@ const Frame = React.createClass({
             <div className="ant-layout-content">
               <div style={{ height: 220 }}>
                 xx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xxxx
+				xx
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 .ant-layout-aside {
   position: relative;
   min-height: 100%;
+  height: 100%;
 }
 
 .ant-layout-aside .ant-layout-logo {
@@ -110,11 +111,13 @@
 .ant-layout-aside .ant-layout-main {
   margin-left: 224px;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .ant-layout-aside-collapse .ant-layout-main {
   margin-left: 64px;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .ant-layout-aside .ant-layout-container {
