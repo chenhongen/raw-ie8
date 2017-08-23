@@ -2,7 +2,7 @@ const webpack = require('webpack');
 var es3ifyPlugin = require('es3ify-webpack-plugin');
 
 module.exports = {
-  entry: './entry.js',
+  entry: ["babel-polyfill", "./entry.js"],
   output: {
 	path: "./", //输出文件夹
 	filename: "bundle.js" //最终打包生成的文件名

@@ -26,7 +26,6 @@ Velocity: IE8 and below require jQuery to be loaded before Velocity.
 npm install style-loader css-loader --save-dev // url-loader file-loader
 npm install babel-plugin-import --save-dev
 npm install babel-plugin-transform-runtime --save-dev
-npm install babel-polyfill --save-dev
 
 .babelrc
 "plugins": ["transform-runtime", ["import", {
@@ -39,6 +38,15 @@ import导入antd插件！
 
 5. webpack
 尝试了使用当前最新版本3.x.x的webpack，结果webpack3本身的js转ie8存在问题无法解决，又降到了1.x。
+
+6. polyfill
+使用antd后，es5-shim已经不足以满足需求，故根据antd官方推荐引入babel-polyfill。至于有了babel-polyfill是否还需要es5-shim有待测试。
+npm install babel-polyfill --save-dev（需参照npm官方配置）
+
+polyfill的大意就是扩展ie8等低版本浏览器中所不具备的方法。如foreach/keys等。
+
+7. 
+
 
 
 
