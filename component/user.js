@@ -1,13 +1,44 @@
 const React = require('react');
-//const { Button } = require('antd');
-import { Button } from 'antd';
+import { Table } from 'antd';
 
-class User extends React.Component {
+const columns = [{
+  title: '姓名',
+  dataIndex: 'name',
+  render: text => <a href="#">{text}</a>,
+}, {
+  title: '年龄',
+  dataIndex: 'age',
+}, {
+  title: '住址',
+  dataIndex: 'address',
+}];
+const data = [{
+  key: '1',
+  name: '胡彦斌',
+  age: 32,
+  address: '西湖区湖底公园1号',
+}, {
+  key: '2',
+  name: '胡彦祖',
+  age: 42,
+  address: '西湖区湖底公园1号',
+}, {
+  key: '3',
+  name: '李大嘴',
+  age: 32,
+  address: '西湖区湖底公园1号',
+}];
+
+// 通过 rowSelection 对象表明需要行选择
+const rowSelection = {
+  getCheckboxProps: record => ({
+    disabled: record.name === '胡彦祖',    // 配置无法勾选的列
+  })
+};
+
+const User = React.createClass({
 	render() {
-	  return (
- 		<Button>User</Button>
- 	  );
- 	}
-}
-
+		return (<Table rowSelection={rowSelection} columns={columns} dataSource={data} />)
+	}
+});
 export {User};

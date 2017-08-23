@@ -45,8 +45,8 @@ npm install babel-polyfill --save-dev（需参照npm官方配置）
 
 polyfill的大意就是扩展ie8等低版本浏览器中所不具备的方法。如foreach/keys等。
 
-7. 
-
+7. router link
+this.context.history is undefined
 
 
 

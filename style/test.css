@@ -1,7 +1,6 @@
 .ant-layout-aside {
   position: relative;
   min-height: 100%;
-  height: 100%;
 }
 
 .ant-layout-aside .ant-layout-logo {
@@ -127,6 +126,9 @@
 .ant-layout-aside .ant-layout-content {
   background: #fff;
   padding: 24px;
+  position: absolute;
+  top: 95px;
+  bottom: 0;
 }
 
 .ant-layout-aside .ant-layout-footer {

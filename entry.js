@@ -80,60 +80,13 @@ const Frame = React.createClass({
           <div className="ant-layout-container">
             <div className="ant-layout-content">
               <div style={{ height: 220 }}>
-                xx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xxxx
-				xx
+                {this.props.children}
               </div>
             </div>
           </div>
-          <div className="ant-layout-footer">
-          Ant Design 版权所有 © 2015 由蚂蚁金服体验技术部支持
-          </div>
+          {/* <div className="ant-layout-footer">
+           Ant Design 版权所有 © 2015 由蚂蚁金服体验技术部支持
+           </div>*/}
         </div>
       </div>
     );
@@ -141,12 +94,14 @@ const Frame = React.createClass({
 });
 
 ReactDOM.render((
-    <Router>
-      <Route path="/" component={Frame}>
-        <Route path="home" component={Home} />
-        <Route path="user" component={User} />
-      </Route>
-    </Router>
+    <Frame>
+      <Router>
+        <Route path="/" component={Home}>
+          <Route path="home" component={Home} />
+          <Route path="user" component={User} />
+        </Route>
+      </Router>
+    </Frame>
   ),
   document.getElementById('app')
 );
