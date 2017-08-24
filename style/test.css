@@ -121,7 +121,7 @@
 
 .ant-layout-aside .ant-layout-container {
   margin: 24px 16px;
-
+  height: 100%;
 }
 
 .ant-layout-aside .ant-layout-content {

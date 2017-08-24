@@ -5,6 +5,9 @@
   "main": "entry.js",
   "scripts": {
     "test": "webpack-dev-server",
+    "build": "webpack --progress --colors -p",
+    "dev": "node build-script.js && webpack --progress --colors --config ./webpack.dev.config.js",
+    "watch": "webpack --progress --colors --watch --config ./webpack.dev.config.js",
     "start": "webpack-dev-server --hot"
   },
   "repository": {
@@ -39,7 +42,9 @@
     "babel-runtime": "^6.26.0",
     "css-loader": "^0.28.5",
     "es3ify-webpack-plugin": "^0.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "history": "^1.17.0",
+    "html-webpack-plugin": "^2.30.1",
     "style-loader": "^0.18.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
