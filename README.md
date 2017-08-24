@@ -45,8 +45,9 @@ npm install babel-polyfill --save-dev（需参照npm官方配置）
 
 polyfill的大意就是扩展ie8等低版本浏览器中所不具备的方法。如foreach/keys等。
 
-7. router link
-this.context.history is undefined
+# 令人窒息的八阿哥
+1. router - <Link>
+当在entry.js入口文件写主页<HomePage>，并在其中写<Link>时，抛出“this.context.history is undefined”，将<HomePage>迁移至单独文件解决。
 
 
 
