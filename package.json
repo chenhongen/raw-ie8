@@ -5,8 +5,8 @@
   "main": "entry.js",
   "scripts": {
     "test": "webpack-dev-server",
-    "build": "webpack --progress --colors -p",
-    "dev": "node build-script.js && webpack --progress --colors --config ./webpack.dev.config.js",
+    "build": "webpack --progress --colors",
+    "dev": "webpack-dev-server --hot --config ./webpack.dev.config.js",
     "watch": "webpack --progress --colors --watch --config ./webpack.dev.config.js",
     "start": "webpack-dev-server --hot"
   },

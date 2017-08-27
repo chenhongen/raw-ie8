@@ -36,6 +36,20 @@ module.exports = {
   plugins: [
     new es3ifyPlugin(),
     //new webpack.optimize.UglifyJsPlugin(), // 打包时 -p
+    new webpack.optimize.UglifyJsPlugin({
+		compress: {
+			properties: false,
+			warnings: false
+		},
+		output: {
+			beautify: true,
+			quote_keys: true
+		},
+		mangle: {
+			screw_ie8: false
+		},
+		sourceMap: false
+	}),
     new webpack.optimize.CommonsChunkPlugin({
       name:'common', // 注意不要.js后缀
       //chunks:['react','react-dom'], // 会生成react.js，react-dom.js
